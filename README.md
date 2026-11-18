@@ -1,4 +1,4 @@
-# 🏦 Snowflake Marketing Sales Intelligence Agent
+# 🏦 Snowflake Marketing Sales Intelligence AI Agent
  End-to-End Data Engineering Pipeline using Snowflake Cortex AI
 
 
@@ -68,7 +68,7 @@ Natural-language Questions + Actionable Insights
 ## Repository Structure
 
 ```text
-Snowflake-Marketing-Sales-Intelligence-Agent/
+Snowflake-Marketing-Sales-Intelligence-AI-Agent/
 │
 ├── .gitignore
 ├── LICENSE
