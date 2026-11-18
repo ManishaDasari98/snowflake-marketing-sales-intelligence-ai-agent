@@ -81,7 +81,7 @@ create or replace file format swt_csvformat
 -- create table marketing_campaign_metrics and load data from s3 bucket
 create or replace stage swt_marketing_data_stage  
   file_format = swt_csvformat  
-  url = 's3://sfquickstarts/sfguide_getting_started_with_snowflake_intelligence/marketing/';  
+  url = 's3://sfquickstarts/marketing/';  
   
 create or replace table marketing_campaign_metrics (
   date date,
@@ -97,7 +97,7 @@ copy into marketing_campaign_metrics
 -- create table products and load data from s3 bucket
 create or replace stage swt_products_data_stage  
   file_format = swt_csvformat  
-  url = 's3://sfquickstarts/sfguide_getting_started_with_snowflake_intelligence/product/';  
+  url = 's3://sfquickstarts/product/';  
   
 create or replace table products (
   product_id number(38,0),
@@ -111,7 +111,7 @@ copy into products
 -- create table sales and load data from s3 bucket
 create or replace stage swt_sales_data_stage  
   file_format = swt_csvformat  
-  url = 's3://sfquickstarts/sfguide_getting_started_with_snowflake_intelligence/sales/';  
+  url = 's3://sfquickstarts/sales/';  
   
 create or replace table sales (
   date date,
@@ -127,7 +127,7 @@ copy into sales
 -- create table social_media and load data from s3 bucket
 create or replace stage swt_social_media_data_stage  
   file_format = swt_csvformat  
-  url = 's3://sfquickstarts/sfguide_getting_started_with_snowflake_intelligence/social_media/';  
+  url = 's3://sfquickstart/social_media/';  
   
 create or replace table social_media (
   date date,
@@ -143,7 +143,7 @@ copy into social_media
 -- create table support_cases and load data from s3 bucket
 create or replace stage swt_support_data_stage  
   file_format = swt_csvformat  
-  url = 's3://sfquickstarts/sfguide_getting_started_with_snowflake_intelligence/support/';  
+  url = 's3://sfquickstarts/support/';  
   
 create or replace table support_cases (
   id varchar(16777216),
@@ -161,12 +161,12 @@ create or replace stage semantic_models encryption = (type = 'snowflake_sse') di
 -- create git api integration and repository
 create or replace api integration snowflake_labs_si_git_api_integration
   api_provider = git_https_api
-  api_allowed_prefixes = ('https://github.com/Snowflake-Labs')
+  api_allowed_prefixes = ('https://github.com/manishadasari98')
   enabled = true;
 
-create or replace git repository snowflake_labs_sfguide_si_repo
+create or replace git repository snowflake-marketing-sales-intelligence-ai-agent
   api_integration = snowflake_labs_si_git_api_integration
-  origin = 'https://github.com/Snowflake-Labs/sfguide-getting-started-with-snowflake-intelligence';
+  origin = 'https://github.com/manishadasari98/snowflake-marketing-sales-intelligence-ai-agent';
 
 -- copy semantic model from git repo to stage
 copy files into @semantic_models
