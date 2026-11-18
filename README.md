@@ -131,7 +131,7 @@ Snowflake-Marketing-Sales-Intelligence-AI-Agent/
 
 ### Step 3: Data Quality Checks
 
-- Perform data quality validations:
+- Perform data quality validations.
 
 - Record count validation.
 
@@ -183,7 +183,7 @@ Apply Snowflake Cortex AI functions to customer support transcripts.
 
 ### Step 8: AI Agent Development
 
-- Create a Snowflake Intelligence Agent and configure:
+- Create a Snowflake Intelligence Agent and configure.
 
 - Cortex Analyst for structured data analytics.
 
@@ -195,7 +195,7 @@ Apply Snowflake Cortex AI functions to customer support transcripts.
 
 ### Step 9: Security and Governance
 
-- Implement enterprise security controls:
+- Implement enterprise security controls.
 
 - Role-Based Access Control.
 
@@ -207,7 +207,7 @@ Apply Snowflake Cortex AI functions to customer support transcripts.
 
 ### Step 10: End-to-End Validation
 
-- Test the AI Agent using business questions and verify:
+- Test the AI Agent using business questions and verify.
 
 - Correct tool selection.
 
